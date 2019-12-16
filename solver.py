@@ -22,3 +22,11 @@ def valid_move(board, row_column, input_number):
 
     return True
 
+
+def empty_position(board):
+    for row_position in len(board):
+        for column_position in len(board):
+            if board[row_position][column_position] == 0:
+                return row_position, column_position
+
+    return None
